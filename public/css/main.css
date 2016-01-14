@@ -1,0 +1,100 @@
+/*
+ * Author: @ElmahdiMahmoud
+ * https://github.com/elmahdim/jade-starter
+ */
+/* line 5, ../../src/scss/tools/_helpers.scss */
+.caps,
+.text-uc {
+  text-transform: uppercase;
+}
+
+/* line 6, ../../src/scss/tools/_helpers.scss */
+.text-cp {
+  text-transform: capitalize;
+}
+
+/* line 9, ../../src/scss/tools/_helpers.scss */
+.text-lt {
+  text-decoration: line-through;
+}
+
+/* line 10, ../../src/scss/tools/_helpers.scss */
+.text-ul {
+  text-decoration: underline;
+}
+/* line 12, ../../src/scss/tools/_helpers.scss */
+.text-ul:hover {
+  text-decoration: none;
+}
+
+/* line 17, ../../src/scss/tools/_helpers.scss */
+.text-truncate {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 24, ../../src/scss/tools/_helpers.scss */
+.m-r5 {
+  margin-right: 5px;
+}
+
+/* line 5, ../../src/scss/tools/_misc.scss */
+#browser-status {
+  width: 100%;
+  color: #000;
+  padding: 7px;
+  z-index: 9999;
+  text-align: center;
+  background-color: #fef1b6;
+  border-bottom: 1px solid #736a60;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font: normal 13px/100% Arial, san-serif;
+}
+/* line 18, ../../src/scss/tools/_misc.scss */
+#browser-status a {
+  color: #1c1c1c;
+  padding: 6px 10px;
+  margin-left: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #f8f6f4;
+  border: 1px solid #736a60;
+  text-transform: capitalize;
+}
+
+/* line 32, ../../src/scss/tools/_misc.scss */
+:focus,
+:active {
+  outline: none;
+}
+
+/* line 33, ../../src/scss/tools/_misc.scss */
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 37, ../../src/scss/tools/_misc.scss */
+body,
+input:focus,
+textarea:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* line 41, ../../src/scss/tools/_misc.scss */
+::-moz-selection {
+  color: #fff;
+  background-color: #333;
+  text-shadow: none;
+}
+
+/* line 46, ../../src/scss/tools/_misc.scss */
+::selection {
+  color: #fff;
+  background-color: #333;
+  text-shadow: none;
+}

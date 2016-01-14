@@ -1,0 +1,37 @@
+.page-header
+  h1 Test task from Aligned Code
+  
+.row
+ form(ng-submit="addRow()", novalidate)
+  .col-sm-4
+    .form-group(ng:class="{true:'has-success', false:'has-error'}[flag]")
+     label Select type
+     select.form-control(name="type", ng-model="field.type")
+      option(value="string") String
+      option(value="number") Number
+  .col-sm-4
+   .form-group(ng:class="{true:'has-success', false:'has-error'}[flag]")
+    label &nbsp;
+    input.form-control(type="text", ng-model="field.value")
+  .col-sm-4
+    label &nbsp;
+    .row
+      .col-sm-6(ng-hide="editorEnabled")
+        button.btn.btn-success.btn-block(type="submit") Add   
+      .col-sm-12(ng-show="editorEnabled")
+        button.btn.btn-danger(type="button", ng-click="disableEditor()") Cancel
+
+table.table.table-striped(ng-show="table.length")
+ tr 
+  th Type
+  th Value
+  th.text-center Action
+ tr(ng-repeat="row in table", id="{{row._id}}")
+  td {{row.type}}
+  td {{row.value}}
+  td.text-center
+   button.btn.btn-danger.btn-sm.m-r5(type="button", ng-click="removeRow(row._id)")
+    i.fa.fa-times     
+   button.btn.btn-primary.btn-sm.m-r5(type="button", ng-click="editRow(row._id); enableEditor()", ng-hide="editorEnabled")
+    i.fa.fa-pencil
+   button.btn.btn-success.btn-sm(type="button", ng-click="updateRow(row._id)", ng-show="editorEnabled") Update

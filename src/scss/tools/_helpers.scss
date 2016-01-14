@@ -1,0 +1,24 @@
+// Helper Classes & Extends
+// --------------------------------------------------
+// Text transform
+.caps,
+.text-uc { text-transform: uppercase; }
+.text-cp { text-transform: capitalize; }
+
+// Text decoration
+.text-lt { text-decoration: line-through; }
+.text-ul { 
+  text-decoration: underline;   
+  &:hover { text-decoration: none; }
+}
+
+
+// Text truncate
+.text-truncate { 
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.m-r5 { margin-right: 5px; }
